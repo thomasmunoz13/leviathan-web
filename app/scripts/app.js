@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('levithanWeb', [
+  .module('leviathanWeb', [
     'ngAnimate',
     'ngResource',
     'ngRoute',
