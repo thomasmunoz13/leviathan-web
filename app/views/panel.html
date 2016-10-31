@@ -1,0 +1,20 @@
+<div ng-controller="PanelCtrl" ng-init="init()">
+
+  <div class="controls">
+    <button class="btn btn-default" ng-click="deploy()">Deploy</button>
+    <button class="btn btn-danger" ng-click="reset()">Disconnect</button>
+  </div>
+
+  <div class="box node col-xs-12 col-sm-6 col-md-4 col-lg-3" ng-repeat="node in nodes">
+    <h1 class="panel-title">{{ node.name }} <small>({{ node.ip }})</small></h1>
+    <button class="btn btn-block btn-info">{{ node.role }}</button>
+
+    <div ng-show="outputs[node.name]">
+      <pre class="time">{{ outputs[node.name].time }}</pre>
+      <pre class="stdout">{{ outputs[node.name].stdout }}</pre>
+      <pre class="stderr">{{ outputs[node.name].stderr }}</pre>
+    </div>
+    
+  </div>
+
+</div>

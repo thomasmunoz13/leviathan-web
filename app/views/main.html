@@ -1,0 +1,13 @@
+<div ng-controller="MainCtrl" ng-init="init()">
+  <div class="box connect">
+    <h1>Monitoring</h1>
+    <form class="form" ng-submit="send(form)">
+        <div class="form-group">
+            <input type="text" id="ip" class="form-control" ng-model="form.ip" placeholder="Addresse IP d'une machine">
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-block btn-primary" value="Valider">
+        </div>
+    </form>
+  </div>
+</div>
