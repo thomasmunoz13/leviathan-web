@@ -1,12 +1,18 @@
-# bouton-rouge-client
+# Leviathan web client
+This is a web client for the [Leviathan](https://github.com/thomasmunoz13/leviathan) project.
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+Thanks to [Loïck](https://github.com/loick111) for his support on this project !
 
-## Build & development
+## How to use it ? 
 
-Run `grunt` for building and `grunt serve` for preview.
+To test it on your browser
 
-## Testing
+```sh
+npm install && bower install && grunt serve
+```
 
-Running `grunt test` will run the unit tests with karma.
+To make a production version
+
+```sh
+npm install && bower install && grunt build
+```
